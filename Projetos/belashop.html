@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BelaShop Online</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        .category {
+            list-style-type: decimal;
+            padding: 0;
+            text-align: left;
+            display: inline-block;
+            width: 200px;
+        }
+        .category > li {
+            font-weight: bold;
+            margin: 10px 0;
+            padding: 10px;
+            background: #f4a261;
+            color: white;
+            border-radius: 5px;
+            position: relative;
+            cursor: pointer;
+        }
+        .subcategory {
+            list-style: none;
+            padding: 0;
+            background: white;
+            border: 1px solid #ddd;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 200px;
+            display: none;
+            z-index: 1000;
+        }
+        .category > li:hover .subcategory {
+            display: block;
+        }
+        .subcategory li {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            color: black; 
+        }
+        .subcategory li:hover {
+            background: #f4a261;
+            color: white;
+            cursor: pointer;
+        }
+        #productTable {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f4a261;
+            color: white;
+        }
+        td img {
+            width: 100px;
+            height: auto;
+        }
+        .btn {
+            background-color: #28a745;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Bem-vindo à BelaShop Online</h1>
+    <p>Encontre os melhores produtos de tecnologia!</p>
+
+    <h2>Categorias</h2>
+    <ol class="category">
+        <li>Computadores
+            <ul class="subcategory">
+                <li>Notebook Dell XPS 15</li>
+                <li>MacBook Pro M2</li>
+                <li>Acer Aspire 5</li>
+            </ul>
+        </li>
+        <li>Smartphones
+            <ul class="subcategory">
+                <li>iPhone 14 Pro</li>
+                <li>Samsung Galaxy S23</li>
+                <li>Xiaomi Redmi Note 12</li>
+            </ul>
+        </li>
+        <li>Periféricos
+            <ul class="subcategory">
+                <li>Mouse Gamer Logitech</li>
+                <li>Teclado Mecânico Redragon</li>
+                <li>Headset HyperX Cloud II</li>
+            </ul>
+        </li>
+        <li>Softwares
+            <ul class="subcategory">
+                <li>Microsoft Office 365</li>
+                <li>Adobe Photoshop</li>
+                <li>Antivírus Kaspersky</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h2>Lista de Produtos</h2>
+    <table id="productTable">
+        <tr>
+            <th>Nome</th>
+            <th>Preço</th>
+            <th>Descrição</th>
+            <th>Imagem</th>
+            <th>Comprar</th>
+        </tr>
+        
+        
+        <tr><td>Notebook Dell XPS 15</td><td>R$ 10.999,00</td><td>Notebook potente com tela 4K e processador i7.</td><td><img src="C:\Users\julia\OneDrive\Área de Trabalho\Iuan Test\Imagens1\dellxps.jpg"></td></td><td><a href="https://produto.mercadolivre.com.br/MLB-3888235285-notebook-dell-xps-15-9530-i7-13700h-32gb-1tb-fhd-promoco-_JM?searchVariation=182021294348#polycard_client=search-nordic&searchVariation=182021294348&position=2&search_layout=grid&type=item&tracking_id=cbe54843-20e2-418e-83cb-301b53ab0627" class="btn" target="_blank">Comprar</a></td></tr>
+        <tr><td>Acer Aspire 5</td><td>R$ 2.899,00</td><td>Notebook custo-benefício para trabalho e estudos.</td><td><img src="C:\Users\julia\OneDrive\Área de Trabalho\Iuan Test\Imagens1\acer.jpg"></td><td><a href="https://www.mercadolivre.com.br/notebook-acer-aspire-5-ryzen-7-156-radeon-512gb-8gb-linux/p/MLB37725686?pdp_filters=item_id:MLB4798860704#is_advertising=true&searchVariation=MLB37725686&backend_model=search-backend&position=1&search_layout=grid&type=pad&tracking_id=676b5883-0932-4cf5-ac58-db50ffb280d1&is_advertising=true&ad_domain=VQCATCORE_LST&ad_position=1&ad_click_id=Yzc1ZTA2ZDItZmFkOS00NGI4LWE3MTItNThlNWJjY2UyNjAy" class="btn" target="_blank">Comprar</a></td></tr>
+        <tr><td>MacBook Pro M2</td><td>R$ 7.999,00</td><td>MacBook Pro de 13 polegadas.</td><td><img src="C:\Users\julia\OneDrive\Área de Trabalho\Iuan Test\Imagens1\mac.png"></td><td><a href="https://produto.mercadolivre.com.br/MLB-3691528003-macbook-pro-apple-133-a2338-m2-8gb-ram-480gb-ips-led-_JM" class="btn" target="_blank">Comprar</a></td></tr>
+
+        
+        <tr><td>iPhone 14 Pro</td><td>R$ 4.087,26</td><td>Celular Apple com câmera de 48MP.</td><td><img src="C:\Users\julia\OneDrive\Área de Trabalho\Iuan Test\Imagens1\iphone.jpg"></td></td><td><a href="https://www.mercadolivre.com.br/apple-iphone-14-pro-128-gb-roxo-profundo-bom-recondicionado/p/MLB2000137970#polycard_client=search-nordic&searchVariation=MLB2000137970&wid=MLB3968807969&position=6&search_layout=stack&type=product&tracking_id=e7047c98-d1da-40c1-b2b6-1db6ce787892&sid=search" class="btn" target="_blank">Comprar</a></td></tr>
+        <tr><td>Samsung Galaxy S23</td><td>R$ 2.999,00</td><td>Smartphone Samsung com 8 GB de Ram e Câmera Tripla.</td><td><img src="C:\Users\julia\OneDrive\Área de Trabalho\Iuan Test\Imagens1\s23.webp"></td></td><td><a href="https://www.mercadolivre.com.br/smartphone-samsung-galaxy-s23-fe-128gb-8gb-ram-cmera-tripla-traseira-de-50mp-12mp-10mp-selfie-de-10mp-tela-infinita-64-azul/p/MLB28007994?pdp_filters=item_id:MLB5213898780#is_advertising=true&searchVariation=MLB28007994&backend_model=search-backend&position=1&search_layout=stack&type=pad&tracking_id=83220291-7c7a-4a8e-a402-3bc033cfd177&is_advertising=true&ad_domain=VQCATCORE_LST&ad_position=1&ad_click_id=ODdjN2RlOTgtZjM0Mi00MTNhLTljYWEtZWRmMDBjYmVmZTlh" class="btn" target="_blank">Comprar</a></td></tr>
+        <tr><td>Xiaomi Redmi Note 12</td><td>R$ 1.049,99</td><td>Smartphone Xiaomi custo-benefício.</td><td><img src="C:\Users\julia\OneDrive\Área de Trabalho\Iuan Test\Imagens1\note 12 redmi.webp"></td></td><td><a href="https://www.mercadolivre.com.br/xiaomi-redmi-note-12-4g-dual-sim-128-gb-azul-4-gb-ram-cor-azul/p/MLB27288462#polycard_client=search-nordic&searchVariation=MLB27288462&wid=MLB3828694631&position=1&search_layout=stack&type=product&tracking_id=5f669eb7-cd39-4de2-8c5d-4abc8967523d&sid=search" class="btn" target="_blank">Comprar</a></td></tr>
+
+        
+        <tr><td>Mouse Gamer Logitech G403 HERO</td><td>R$ 252,62</td><td>Mouse de alta precisão.</td><td><img src="C:\Users\julia\OneDrive\Área de Trabalho\Iuan Test\Imagens1\mousenew.jpeg"></td></td><td><a href="https://www.mercadolivre.com.br/mouse-gamer-logitech-g403-hero-sensor-hero-25k/p/MLB15755061#polycard_client=search-nordic&searchVariation=MLB15755061&wid=MLB1813858155&position=10&search_layout=grid&type=product&tracking_id=d674c91d-ec8b-4ae2-a761-0ca3f3e98bd6&sid=search" class="btn" target="_blank">Comprar</a></td></tr>
+        <tr><td>Teclado Redragon Kumara Pro</td><td>R$ 330,00</td><td>Teclado mecânico RGB para gamers.</td><td><img src="C:\Users\julia\OneDrive\Área de Trabalho\Iuan Test\Imagens1\reddragon.webp"></td></td><td><a href="https://www.mercadolivre.com.br/teclado-redragon-kumara-pro-rgb-wireless-preto-switch-blue-idioma-portugus-brasil/p/MLB27722824#polycard_client=search-nordic&searchVariation=MLB27722824&wid=MLB3498654437&position=5&search_layout=grid&type=product&tracking_id=e4b145fd-902f-4d4c-ac24-e3a2820dcb5c&sid=search" class="btn" target="_blank">Comprar</a></td></tr>
+        <tr><td>Headset HyperX Cloud II</td><td>R$ 466,57</td><td>Fone de ouvido gamer com som surround.</td><td><img src="C:\Users\julia\OneDrive\Área de Trabalho\Iuan Test\Imagens1\hyperX.jpg"></td></td><td><a href="https://www.mercadolivre.com.br/headset-gamer-cloud-il-surround-71-usb-khx-hscp-rd-hyperx-cor-preto/p/MLB6355360#polycard_client=search-nordic&searchVariation=MLB6355360&wid=MLB4009206049&position=15&search_layout=grid&type=product&tracking_id=40e686d6-199e-4467-97a1-575d6ff46ea5&sid=search" class="btn" target="_blank">Comprar</a></td></tr>
+
+        
+        <tr><td>Microsoft Office 365</td><td>R$ 499,00</td><td>Pacote Office com Word, Excel e PowerPoint.</td><td><img src="C:\Users\julia\OneDrive\Área de Trabalho\Iuan Test\Imagens1\MCS.webp"></td></td><td><a href="https://produto.mercadolivre.com.br/MLB-3880647857-microsoft-office-365-family-ate-6-usuarios-digital-1-ano-_JM#polycard_client=search-nordic&position=19&search_layout=grid&type=item&tracking_id=56d10021-04c1-4ccf-9178-1728a894139e" class="btn" target="_blank">Comprar</a></td></tr>
+        <tr><td>Adobe Photoshop</td><td>R$ 1.200,00</td><td>Software profissional de edição de imagens.</td><td><img src="C:\Users\julia\OneDrive\Área de Trabalho\Iuan Test\Imagens1\adope.jpg"></td></td><td><a href="https://www.adobe.com/br/products/photoshop.html" class="btn" target="_blank">Comprar</a></td></tr>
+        <tr><td>Antivírus Kaspersky</td><td>R$ 199,00</td><td>Software de proteção contra vírus e malware.</td><td><img src="C:\Users\julia\OneDrive\Área de Trabalho\Iuan Test\Imagens1\kaper.jpeg"></td></td><td><a href="https://www.mercadolivre.com.br/kaspersky-premium-antivirus-1-dispositivo-de-12-meses/p/MLB37094554#polycard_client=search-nordic&searchVariation=MLB37094554&wid=MLB5213875262&position=25&search_layout=grid&type=product&tracking_id=ed42cb6d-2584-4ac8-9a6a-0a0efd889c7b&sid=search" class="btn" target="_blank">Comprar</a></td></tr>
+    </table>
+
+</body>
+</html>
